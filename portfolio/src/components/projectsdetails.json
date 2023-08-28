@@ -1,0 +1,66 @@
+{
+    "projects":[
+        {
+            "id": "1",
+            "name": "APiS",
+            "image":"https://cdn-icons-png.flaticon.com/512/2164/2164832.png",
+            "description": "This is a API project in which I am using multiple APIs in one site",
+            "start": "2023-06-04",
+            "end": "present",
+            "status": "Active",
+            "technology": ["HTML", "CSS", "JavaScript", "Bootstrap", "APIs"],
+            "link": "https://ak3311g.github.io/APiS.github.io/"
+        },
+        {
+            "id": "2",
+            "name": "LearnReact",
+            "image":"https://raw.githubusercontent.com/ak3311g/learnreact/master/public/favicon.ico",
+            "description": "This is a React project in which I written about React and its topics in detail",
+            "start": "2023-06-18",
+            "end": "2023-06-25",
+            "status": "Completed",
+            "technology": ["HTML", "CSS", "JavaScript", "React", "Bootstrap"],
+            "link": "http://firstlearnreact.netlify.app"
+        },
+        {
+            "id": "3",
+            "name": "Portfolio",
+            "image":"https://raw.githubusercontent.com/ak3311g/portfolio/main/public/favicon.ico?token=GHSAT0AAAAAACGIRTKUKWQPR4G3XGNTWIUQZG46APQ",
+            "description": "This is my portfolio website which is made using React",
+            "start": "2023-03-26",
+            "end": "present",
+            "status": "Active",
+            "technology": ["HTML", "CSS", "JavaScript", "React", "Bootstrap"],
+            "link": "https://ankitreactportfolio.netlify.app/"
+        },
+        {
+            "id": "3",
+            "name": "Responsive UI",
+            "image":"https://github.com/ak3311g/Ultimate-resource-kit/blob/main/src/images/logo.png?raw=true",
+            "description": "This is just a Frontend of a React App which is responsive in nature",
+            "start": "2023-07-18",
+            "end": "2023-07-22",
+            "status": "Completed",
+            "technology": ["HTML", "CSS", "JavaScript", "React", "Bootstrap"],
+            "link": "https://reactresponsiveui.netlify.app/"
+        }
+    ],
+
+    "services":[
+        {
+            "name":"Web Development",
+            "logo":"../images/profile.jpg",
+            "content":"Worked on dynamic web pages and interactive designes"
+        },
+        {
+            "name":"UI/Ux Design",
+            "logo":"../images/profile.jpg",
+            "content":"Worked on dynamic web pages and interactive designes"
+        },
+        {
+            "name":"Editing",
+            "logo":"../images/profile.jpg",
+            "content":"Worked on dynamic web pages and interactive designes"
+        }
+    ]
+}

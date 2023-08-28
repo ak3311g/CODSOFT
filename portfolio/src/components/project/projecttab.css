@@ -1,0 +1,269 @@
+.card{
+    background: url("../../images/skillbg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    margin: 0 50px 0 0;
+    display: flex;
+    width: 350px;
+    height: 500px;
+    flex-direction: column;
+    align-items: center;
+    transition: 1s ease-in-out;
+}
+
+.card .project-title{
+    font-family: "Montserrat";
+    font-size: 40px;
+    margin: 10px 0 0 0;
+    text-align: center;
+    font-weight: 800;
+}
+
+.card .project-image{
+    width: 100px;
+    height: 100px;
+    margin: 10px 0 0 0;
+}
+
+.card .project-description{
+    width: 300px;
+    height: 70px;
+    margin: 10px 0 0 0;
+    text-align: center;
+    overflow-y: scroll;
+    border: 1px solid white;
+}
+
+.card .project-description::-webkit-scrollbar{
+    display: none;
+}
+
+.card .project-details .project-date{
+    font-size: 15px;
+    font-weight: 800;
+    margin: 15px;
+    text-align: center;
+}
+
+.card .project-details .project-status{
+    font-size: 15px;
+    font-weight: 800;
+    margin: 15px;
+    text-align: center;
+}
+
+.card .project-details .project-status.green{
+    background-color: #00FF00;
+    color: black;
+    border-radius: 20px;
+}
+
+.card .project-details .project-status.red{
+    background-color: #FF0000;
+    border-radius: 20px;
+}
+
+.card .project-details .project-tech{
+    font-size: 15px;
+    font-weight: 800;
+    margin: 15px;
+    text-align: center;
+}
+
+.card .project-details .project-tech-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    height: 50px;
+    width: 300px;
+    flex-direction: column;
+}
+
+.card .project-details .project-tech-list::-webkit-scrollbar{
+    display: none;
+}
+
+.card .project-details .project-tech-list li{
+    padding: 0;
+    margin: 0 15px 0 0;
+    height: 40px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll{
+    0%{
+        transform: translateX(0);
+    }
+
+    50%{
+        transform: translateX(calc(-130% * var(--item-count)));
+    }
+
+    50.01%{
+        transform: translateX(calc(90% * var(--item-count)));
+    }
+    100%{
+        transform: translateX(0);
+    }
+
+}
+
+.card .project-details .project-tech-list li{
+    padding: 0;
+    margin: 0 15px 0 0;
+    height: 40px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card .project-details .project-link{
+    font-size: 20px;
+    font-weight: 800;
+    display: inline-block;
+    width: 100%;
+    padding: 5px 0 5px 0;
+    border-radius: 20px;
+    background-color:#c50d2f;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* Projects Comp CSS */
+
+.projects ul{
+    display: flex;
+    overflow-x: scroll;
+    height: 500px;
+}
+
+.projects ul::-webkit-scrollbar{
+    display: none;
+}
+
+.projects ul li{
+    height: 500px;
+}
+
+@media screen and (max-width: 768px){
+    .card{
+        width: 300px;
+        height: 400px;
+    }
+
+    .card .project-title{
+        font-size: 30px;
+    }
+
+    .card .project-image{
+        width: 100px;
+        height: 100px;
+    }
+
+    .card .project-description{
+        width: 250px;
+        height: 50px;
+        font-size: 10px;
+    }
+
+    .card .project-details .project-date{
+        font-size: 10px;
+        margin:0 0 10px 0 0;
+    }
+
+    .card .project-details .project-status{
+        font-size: 10px;
+        margin:0 0 0 0;
+    }
+
+    .card .project-details .project-tech{
+        font-size: 10px;
+        margin:5px 0 0 0;
+    }
+
+    .card .project-details .project-tech-list{
+        height: 50px;
+        width: 250px;
+        font-size: 10px;
+    }
+
+    .card .project-details .project-link{
+        font-size: 15px;
+        padding: 3px 0 3px 0;
+    }
+
+    .projects ul{
+        display: flex;
+        overflow-x: scroll;
+        height: 400px;
+    }
+
+    .projects ul li{
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .card{
+        width: 300px;
+        height: 400px;
+    }
+
+    .card .project-title{
+        font-size: 20px;
+        margin: 10px 0 0 0;
+    }
+
+    .card .project-image{
+        width: 100px;
+    }
+
+    .card .project-description{
+        width: 200px;
+        height: 50px;
+    }
+
+    .card .project-details .project-date{
+        font-size: 15px;
+    }
+
+    .card .project-details .project-status{
+        font-size: 15px;
+    }
+
+    .card .project-details .project-tech{
+        font-size: 15px;
+    }
+
+    .card .project-details .project-tech-list{
+        height: 50px;
+        width: 200px;
+        font-size: 15px;
+    }
+
+    .card .project-details .project-link{
+        font-size: 15px;
+        padding: 3px 0 3px 0;
+    }
+
+    .projects ul{
+        display: flex;
+        overflow-x: scroll;
+        height: 400px;
+    }
+
+    .projects ul li{
+        height: 400px;
+    }
+}

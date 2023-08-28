@@ -1,0 +1,73 @@
+.hometabs{
+    display: flex;
+    justify-content: space-between;
+    font-family: "Agrandir";
+}
+
+.hometabs .always{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+}
+
+.download{
+    position: fixed;
+    top: 2vh;
+    z-index: 100;
+    right: 2vw;
+    margin: 0 30px;
+}
+
+.download .download-button{
+    text-decoration: none;
+    background-color: #C50D2F;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+@media only screen and (max-width: 1200px){
+    .download{
+        top: 5vh;
+        right: 0;
+        margin: 0 0 0 10px;
+    }
+
+    .download .download-button{
+        padding: 5px 5px;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .hometabs .always{
+        flex-direction: column-reverse;
+    }
+
+    .hometabs .always .introbox{
+        width: 90%;
+        margin: 0;
+    }
+
+    .hometabs .always .profile img{
+        width:200px;
+        height: 200px;
+    }
+
+    .download{
+        top: 5vh;
+        left: 0;
+        margin: 0 0 0 10px;
+    }
+
+    .download .download-button{
+        padding: 5px 5px;
+        font-size: 10px;
+    }
+}

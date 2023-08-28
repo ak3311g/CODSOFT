@@ -1,0 +1,22 @@
+@font-face{
+    font-family: "Monteserrat";
+    src: url(./font/Montserrat-Regular.ttf);
+}
+
+@font-face{
+    font-family: "Agrandir";
+    src: url(./font/Agrandir-WideBlackItalic.otf);
+}
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Monteserrat";
+    background-color: #f0f0f0;
+    margin: 0;
+}

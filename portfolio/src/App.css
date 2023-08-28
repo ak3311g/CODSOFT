@@ -1,0 +1,30 @@
+body{
+    background:url(./images/background.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar .list{
+    position: absolute;
+    left: 50%;
+    top: 10px;
+}
+
+.projects #projects{
+    background-color: #C50D2F;
+    color: white;
+    font-family: "Agrandir";
+    padding: 50px 0px;
+}
+
+.top-space{
+    width: 100px;
+    height: 100px;
+}

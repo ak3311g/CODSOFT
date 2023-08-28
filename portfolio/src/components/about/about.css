@@ -1,0 +1,63 @@
+.heading{
+    background-color: #C60C31;
+    font-family: "Agrandir";
+    padding: 50px 0px; 
+}
+
+.about-me{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    backdrop-filter: blur(10px) brightness(1.5);
+}
+
+.about-me .img{
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    width: 300px;
+    height: 450px;
+    margin: 50px 60px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px 0px #000000;
+}
+
+.about-me p{
+    width:1000px;
+    height: 400px;
+    font-size: 25px;
+}
+
+@media only screen and (max-width: 1080px){
+    .about-me .img{
+        width: 250px;
+        height: 350px;
+        margin: 30px 30px;
+    }
+
+    .about-me p{
+        width: 60%;
+        height: 400px;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .about-me{
+        flex-direction: column;
+        height: 90vh;
+    }
+
+    .about-me .img{
+        width: 200px;
+        height: 300px;
+        margin: 50px 0px;
+    }
+    
+    .about-me p{
+        width: 80%;
+        height: 400px;
+        text-align: center;
+        font-size: 50%;
+    }
+}

@@ -1,0 +1,81 @@
+.introbox{
+    background-color: #1B1B1B;
+    box-shadow: 15px 10px 30px 5px #000000;
+    border-radius: 30px;
+    width: 350px;
+    height: 500px;
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+    color: #C50D2F;
+}
+
+.skillbox{
+    background: url("../../images/skillbg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 450px;
+    height: 550px;
+    text-align: center;
+    font-style: italic;
+    font-weight: 800;
+    color: #C50D2F;
+    margin: 0px 50px 0px 0px;
+}
+
+@media only screen and (max-width: 1080px){
+    .skillbox{
+        display:none;
+    }
+    .expand-button{
+        display: none;
+    }
+}
+
+.introbox .work{
+    font-size: 24px;
+    line-height: 20px;
+}
+
+.backbutton{
+    background: transparent;
+    border: 0px;
+    width: 100%;
+}
+
+.progress{
+    background-color: #1B1B1B;
+    border: 0.3px solid white;
+    margin: 0px 20px;
+    text-align: center;
+    color: #C50D2F;
+}
+
+.progress-bar{
+    background-color: #C50D2F;
+    border-radius: 1px;
+}
+
+.skillshow{
+    transition: 0.5s;
+}
+
+.skillhide{
+    transition: 0.5s;
+    display: flex;
+}
+
+.expand-button{
+    background-color: #1B1B1B;
+    border-radius: 20px 0px 0px 20px;
+    width: 50px;
+    height: 100px;
+    text-align: center;
+    color:white;
+    cursor: pointer;
+    font-size: 30px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

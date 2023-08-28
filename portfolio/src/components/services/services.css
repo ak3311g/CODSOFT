@@ -1,0 +1,54 @@
+.servicetab .always{
+    display: flex;
+    justify-content: space-between;
+}
+
+.servicecard{
+    background-color: #1B1B1B;
+    border-radius: 10px;
+    width: 400px;
+    height: 500px;
+    margin: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.servicecard:hover{
+    transform: scale(1.1);
+    box-shadow: 10px 20px 15px rgba(0, 0, 0, 0.9);
+}
+
+.servicecardhead{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #C50D2F;
+    margin: 1rem;
+    text-align: center;
+}
+
+.servicecardbody{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ffffff;
+    text-align: center;
+    margin: 20px;
+}
+
+.top-services{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.top-services .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-services > div{
+    flex: 1 1 500px;
+}

@@ -1,0 +1,12 @@
+#slide-show{
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 768px){
+    #slide-show{
+        height: 300px;
+    }
+}

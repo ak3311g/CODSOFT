@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link type="image/x-icon" rel="icon" href="assets/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+      </style>
+    <title>Gaming Realm</title>
+</head>
+
+<body class="bg-[#EBE5E1] font-['Montserrat']">
+    <section class="navbar flex justify-between items-center">
+        <div class="logo flex justify-center items-center">
+            <img src="assets/logo.png" alt="logo" class="w-10 m-3">
+            <p class="font-bold text-2xl">GAMING REALM</p>
+        </div>
+        <div class="nav">
+            <ul class="hidden md:flex">
+                <li class="mx-3"><a href="#">Home</a></li>
+                <li class="mx-3"><a href="#">Games</a></li>
+                <li class="mx-3"><a href="#">About</a></li>
+                <li class="mx-3"><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="me-5">
+            <button class="bg-green-600 rounded-xl text-white px-3">Login</button>
+        </div>
+    </section>
+
+    <section class="hero_page flex">
+        <ul class="flex w-1/2">
+            <li class="animation absolute top-10 md:top-20 -left-10"><img id="slide-show" src="" /></li>
+        </ul>
+        <div class="w-full text-end flex flex-col justify-center me-10 h-[100vh] mt-5 md:mt-0">
+            <p id="heading" class="text-5xl font-semibold"></p>
+            <p id="description" class="text-2xl my-3"></p>
+        </div>
+    </section>
+
+    <section>
+        <p class="text-5xl bg-blue-400 py-5 text-center font-extrabold">Latest Titles</p>
+        <ul class="flex  flex-col md:flex-row overflow-scroll w-[100vw] justify-center items-center">
+            <li class="flex flex-col justify-center items-center w-[300px] m-4 rounded-xl">
+                <img src="/assets/banisher.png" class="w-full md:w-36 m-4">
+                <p class="m-4 text-center overflow-scroll h-[150px] font-extrabold text-2xl">
+                    Banishers <br/>Ghost of the new Eden
+                </p>
+            </li>
+            <li class="flex flex-col justify-center items-center w-[300px] m-4 rounded-xl">
+                <img src="/assets/hello.jpg" class="w-full md:w-36 m-4">
+                <p class="m-4 text-center overflow-scroll h-[150px] font-extrabold text-2xl">
+                    Hello <br/>Engineer
+                </p>
+            </li>
+            <li class="flex flex-col justify-center items-center w-[300px] m-4 rounded-xl">
+                <img src="/assets/images (1).jpeg" class="w-full md:w-36 m-4">
+                <p class="m-4 text-center overflow-scroll h-[150px] font-extrabold text-2xl">
+                    Ghost Runner <br/>3
+                </p>
+            </li>
+            <li class="flex flex-col justify-center items-center w-[300px] m-4 rounded-xl">
+                <img src="/assets/metalgear.jpg" class="w-full md:w-36 m-4">
+                <p class="m-4 text-center overflow-scroll h-[150px] font-extrabold text-2xl">
+                    Metal Gear <br/>Snake Eater
+                </p>
+            </li>
+            <li class="flex flex-col justify-center items-center w-[300px] m-4 rounded-xl">
+                <img src="/assets/mw3.jpg" class="w-full md:w-36 m-4">
+                <p class="m-4 text-center overflow-scroll h-[150px] font-extrabold text-2xl">
+                    Modern Warfare <br/>3
+                </p>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <p class="text-5xl bg-blue-400 py-5 text-center font-extrabold">Latest News</p>
+        <ul class="flex flex-col sm:flex-row overflow-scroll w-[100vw] justify-center items-center">
+            <li class="flex flex-col justify-center items-center w-[300px] border-[1px] border-black m-4 rounded-xl">
+                <img src="/assets/ubisoft.png" class="w-full md:w-36 m-4">
+                <p class="m-4 text-center overflow-scroll h-[200px]">
+                    A group of modders has received permission from Ubisoft to revive Dark Messiah of Might and Magic with a code-based software development kit (SDK) for modding the game. The iconic first-person ARPG was originally developed by Arkane Studios in the early-to-mid-2000s with some assistance from Valve
+                </p>
+            </li>
+            <li class="flex flex-col justify-center items-center w-[300px] border-[1px] border-black m-4 rounded-xl">
+                <img src="/assets/ubisoft.png" class="w-full md:w-36 m-4">
+                <p class="m-4 text-center overflow-scroll h-[200px]">
+                    A group of modders has received permission from Ubisoft to revive Dark Messiah of Might and Magic with a code-based software development kit (SDK) for modding the game. The iconic first-person ARPG was originally developed by Arkane Studios in the early-to-mid-2000s with some assistance from Valve
+                </p>
+            </li>
+            <li class="flex flex-col justify-center items-center w-[300px] border-[1px] border-black m-4 rounded-xl">
+                <img src="/assets/ubisoft.png" class="w-full md:w-36 m-4">
+                <p class="m-4 text-center overflow-scroll h-[200px]">
+                    A group of modders has received permission from Ubisoft to revive Dark Messiah of Might and Magic with a code-based software development kit (SDK) for modding the game. The iconic first-person ARPG was originally developed by Arkane Studios in the early-to-mid-2000s with some assistance from Valve
+                </p>
+            </li>
+            <li class="flex flex-col justify-center items-center w-[300px] border-[1px] border-black m-4 rounded-xl">
+                <img src="/assets/ubisoft.png" class="w-full md:w-36 m-4">
+                <p class="m-4 text-center overflow-scroll h-[200px]">
+                    A group of modders has received permission from Ubisoft to revive Dark Messiah of Might and Magic with a code-based software development kit (SDK) for modding the game. The iconic first-person ARPG was originally developed by Arkane Studios in the early-to-mid-2000s with some assistance from Valve
+                </p>
+            </li>
+            <li class="flex flex-col justify-center items-center w-[300px] border-[1px] border-black m-4 rounded-xl">
+                <img src="/assets/ubisoft.png" class="w-full md:w-36 m-4">
+                <p class="m-4 text-center overflow-scroll h-[200px]">
+                    A group of modders has received permission from Ubisoft to revive Dark Messiah of Might and Magic with a code-based software development kit (SDK) for modding the game. The iconic first-person ARPG was originally developed by Arkane Studios in the early-to-mid-2000s with some assistance from Valve
+                </p>
+            </li>
+        </ul>
+    </section>
+    <section>
+        <p class="text-5xl bg-blue-400 py-5 text-center font-extrabold">About</p>
+        <div class="flex justify-center items-center m-10">
+            <p class="text-center text-2xl font-extrabold w-4/5">
+                Gaming Realm is a website where you can find all the latest news and updates about the gaming world. We also provide you with the latest games and their reviews. We also have a forum where you can discuss about the games and their reviews.
+            </p>
+        </div>
+    </section>
+    <section>
+        <p class="text-5xl bg-blue-400 py-5 text-center font-extrabold">Contact Us</p>
+        <div class="flex justify-center items-center m-10">
+            <p class="text-center text-2xl font-extrabold w-4/5">
+                You can contact us at <a href="mailto:random@gmail.com">gamingrealms@gmail.com</a>
+            </p>
+        </div>
+    </section>
+</body>
+<script src="index.js"></script>
+</html>

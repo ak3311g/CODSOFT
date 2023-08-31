@@ -1,13 +1,34 @@
 const slide = document.getElementById('slide-show');
+const background = document.getElementById('hero_page');
 const heading = document.getElementById('heading');
 const description = document.getElementById('description');
 
 const images = [
-    '/assets/1.png',
-    '/assets/2.png',
-    '/assets/3.png',
-    '/assets/4.png',
-    '/assets/5.png'
+    {
+        src: '/assets/1.png',
+        background: '#7E7EBB',
+        color: '#CBB178',
+    },
+    {
+        src: '/assets/2.png',
+        background: '#8D8E73',
+        color: '#72718C',
+    },
+    {
+        src: '/assets/3.png',
+        background: '#EDE3EC',
+        color: '#121C13',
+    },
+    {
+        src: '/assets/4.png',
+        background: '#344E87',
+        color: '#CBB178',
+    },
+    {
+        src: '/assets/5.png',
+        background: '#28292F',
+        color: '#D7D6D0',
+    }
 ];
 
 const data = [
@@ -48,6 +69,8 @@ let currentData = 0;
 function changeData() {
     heading.innerHTML = data[currentData].title;
     description.innerHTML = data[currentData].description;
+    heading.style.color = images[currentImage].color;
+    description.style.color = images[currentImage].color;
     currentData++;
     if (currentData >= data.length) {
         currentData = 0;
@@ -56,7 +79,8 @@ function changeData() {
 
 
 function changeSrc() {
-    slide.src = images[currentImage];
+    slide.src = images[currentImage].src;
+    background.style.background = images[currentImage].background;
 }
 
 function changeOpacity() {
